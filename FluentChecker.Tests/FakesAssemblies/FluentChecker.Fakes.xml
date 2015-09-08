@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentChecker.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FluentChecker.Fakes.ShimExceptionGenerator">
+            <summary>Shim type of FluentChecker.ExceptionGenerator</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.ShimExceptionGenerator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.ShimExceptionGenerator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.ShimExceptionGenerator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.ShimExceptionGenerator.ThrowOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action)">
+            <summary>Sets the shim of ExceptionGenerator.Throw()</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.ShimExceptionGenerator.ThrowOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String})">
+            <summary>Sets the shim of ExceptionGenerator.Throw(String message)</summary>
+        </member>
+        <member name="P:FluentChecker.Fakes.ShimExceptionGenerator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:FluentChecker.Fakes.StubBaseOperator">
+            <summary>Stub type of FluentChecker.BaseOperator</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.StubBaseOperator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.StubBaseOperator.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseOperator</summary>
+        </member>
+        <member name="M:FluentChecker.Fakes.StubBaseOperator.PerformLogic(System.Boolean)">
+            <summary>Sets the stub of BaseOperator.PerformLogic(Boolean condition)</summary>
+        </member>
+        <member name="F:FluentChecker.Fakes.StubBaseOperator.PerformLogicBoolean">
+            <summary>Sets the stub of BaseOperator.PerformLogic(Boolean condition)</summary>
+        </member>
+        <member name="P:FluentChecker.Fakes.StubBaseOperator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:FluentChecker.Fakes.StubBaseOperator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FluentChecker.Fakes.StubBaseOperator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
