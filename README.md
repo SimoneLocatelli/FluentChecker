@@ -24,8 +24,7 @@ public class UserRepository()
 
 The *If* methods are all are implemented in the [Check class] (https://github.com/SimoneLocatelli/FluentChecker/blob/master/FluentChecker/Check.cs).
 
-If you want to extend it, the best way is to create a new static class that inherits from Check.
-As long your as your methods return a boolean and you add the FluentChecker namespace, you will be able to concatenate them to the Throw methods.
+If you want to extend it, the easiest way is to create a new static class; as long your as your methods return a boolean and you add the FluentChecker namespace, you will be able to concatenate them to the Throw methods (since they are extension methods for the bool type).
 
 ```C#
 
@@ -33,7 +32,7 @@ using FluentChecker
 
 //...
 
-  public static class CustomCheck : Check
+  public static class CustomCheck :
   {
   
     public static bool IfCustom()
@@ -54,7 +53,7 @@ using FluentChecker
   
     public void DoStuff(string value)
     {
-      CustomCheck.IfIsNullOrWhiteSpace(value).Throw<ArgumentException>( () => value ); 
+      Check.IfIsNullOrWhiteSpace(value).Throw<ArgumentException>( () => value ); 
       CustomCheck.IfCustom(value).Throw<ArgumentException>( () => value );
       //...
     }
